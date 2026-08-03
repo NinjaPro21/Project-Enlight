@@ -8,8 +8,9 @@
   margin-bottom: 28px;
   padding: 24px;
   border-radius: 16px;
-  background: #fff;
+  background: var(--ace-card);
   border: 1px solid var(--ace-border);
+  color: var(--ace-text);
 }
 
 .ace-social-section__header {
@@ -23,6 +24,7 @@
 .ace-social-section__header h2 {
   margin: 0;
   font-size: 1.35rem;
+  color: var(--ace-text);
 }
 
 .ace-social-section__meta {
@@ -43,9 +45,10 @@
   margin-bottom: 28px;
   padding: 24px 28px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #fff 0%, #ffffff 100%);
-  border: 1px solid rgba(181, 154, 115, 0.25);
-  box-shadow: 0 8px 32px rgba(26, 26, 26, 0.05);
+  background: linear-gradient(135deg, var(--ace-card) 0%, var(--ace-formula-bg) 100%);
+  border: 1px solid color-mix(in srgb, var(--ace-gold) 25%, var(--ace-border));
+  box-shadow: var(--ace-shadow);
+  color: var(--ace-text);
 }
 
 .ace-social-profile--guest {
@@ -68,8 +71,8 @@
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.12);
+  border: 3px solid var(--ace-card);
+  box-shadow: var(--ace-shadow);
   flex-shrink: 0;
 }
 
@@ -86,6 +89,7 @@
 .ace-social-profile__info h2 {
   margin: 0 0 4px;
   font-size: 1.5rem;
+  color: var(--ace-text);
 }
 
 .ace-social-profile__stats {
@@ -143,8 +147,9 @@
   gap: 10px;
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--ace-surface-muted);
   border: 1px solid var(--ace-border);
+  color: var(--ace-text);
 }
 
 .ace-social-achievement-chip__icon {
@@ -165,7 +170,7 @@
   margin-bottom: 18px;
   padding: 6px;
   border-radius: 12px;
-  background: rgba(250, 246, 240, 0.8);
+  background: var(--ace-surface-muted);
   border: 1px solid var(--ace-border);
 }
 
@@ -180,7 +185,7 @@
   display: inline-flex;
   padding: 3px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.7);
+  background: color-mix(in srgb, var(--ace-surface-muted) 85%, var(--ace-border));
   border: 1px solid var(--ace-border);
 }
 
@@ -196,7 +201,7 @@
   background: transparent;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--ace-text-light);
+  color: var(--ace-text-muted);
   cursor: pointer;
   transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
@@ -206,9 +211,9 @@
 }
 
 .ace-lb-segment__btn--active {
-  background: #fff;
+  background: var(--ace-card);
   color: var(--ace-text);
-  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.08);
+  box-shadow: var(--ace-shadow);
 }
 
 .ace-lb-segment__btn:disabled {
@@ -234,7 +239,8 @@
   padding: 7px 12px;
   border-radius: 8px;
   border: 1px solid var(--ace-border);
-  background: #fff;
+  background: var(--ace-card);
+  color: var(--ace-text);
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
@@ -251,7 +257,8 @@
   padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid var(--ace-border);
-  background: #fff;
+  background: var(--ace-card);
+  color: var(--ace-text);
   font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
@@ -270,8 +277,9 @@
   margin-bottom: 18px;
   padding: 16px 20px;
   border-radius: 14px;
-  background: linear-gradient(90deg, var(--ace-gold-soft) 0%, var(--ace-card) 60%);
-  border: 1px solid rgba(181, 154, 115, 0.35);
+  background: linear-gradient(90deg, var(--ace-gold-soft) 0%, var(--ace-surface-muted) 55%, var(--ace-card) 100%);
+  border: 1px solid color-mix(in srgb, var(--ace-gold) 35%, var(--ace-border));
+  color: var(--ace-text);
 }
 
 .ace-lb-your-rank--empty {
@@ -321,6 +329,7 @@
   gap: 8px;
   margin: 0;
   font-size: 1.25rem;
+  color: var(--ace-text);
 }
 
 .ace-lb-your-rank__of {
@@ -601,8 +610,9 @@
   gap: 8px;
   padding: 8px 14px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.85);
+  background: color-mix(in srgb, var(--ace-card) 88%, transparent);
   border: 1px solid var(--ace-border);
+  color: var(--ace-text);
   font-size: 0.82rem;
   font-weight: 600;
 }
@@ -612,7 +622,8 @@
   margin-bottom: 24px;
   padding: 20px 24px;
   border-radius: 16px;
-  background: #fff;
+  background: var(--ace-card);
+  color: var(--ace-text);
   border: 1px solid var(--ace-border);
 }
 
@@ -624,6 +635,7 @@
   padding: 0;
   border: none;
   background: none;
+  color: var(--ace-text);
   cursor: pointer;
   text-align: left;
 }
@@ -672,7 +684,8 @@
   padding: 14px;
   border-radius: 14px;
   border: 2px solid var(--ace-border);
-  background: #fff;
+  background: var(--ace-surface-muted);
+  color: var(--ace-text);
   cursor: pointer;
   font-size: 0.82rem;
   font-weight: 600;
@@ -737,6 +750,7 @@
   border-radius: 12px;
   border: 2px solid var(--ace-border);
   background: var(--ace-formula-bg);
+  color: var(--ace-text);
   cursor: pointer;
   text-align: center;
 }
@@ -744,6 +758,7 @@
 .ace-profile-pick--selected {
   border-color: var(--ace-gold);
   background: var(--ace-mint-bg);
+  color: var(--ace-mint-text);
 }
 
 .ace-profile-pick__icon {
@@ -772,7 +787,8 @@
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--ace-border);
-  background: #fff;
+  background: var(--ace-card);
+  color: var(--ace-text);
 }
 
 .ace-group-hub__card--school {
@@ -788,15 +804,23 @@
   gap: 16px;
   align-items: center;
   padding: 22px 24px;
-  background: linear-gradient(90deg, rgba(250, 246, 240, 0.9) 0%, #fff 100%);
+  background: linear-gradient(90deg, var(--ace-surface-muted) 0%, var(--ace-card) 100%);
 }
 
 .ace-group-hub__card--school .ace-group-hub__banner {
-  background: linear-gradient(90deg, rgba(107, 159, 212, 0.12) 0%, #fff 100%);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #6b9fd4 14%, var(--ace-card)) 0%,
+    var(--ace-card) 100%
+  );
 }
 
 .ace-group-hub__card--clan .ace-group-hub__banner {
-  background: linear-gradient(90deg, rgba(196, 122, 107, 0.12) 0%, #fff 100%);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #c47a6b 14%, var(--ace-card)) 0%,
+    var(--ace-card) 100%
+  );
 }
 
 .ace-group-hub__icon {
@@ -818,12 +842,13 @@
 .ace-group-hub__banner h2 {
   margin: 0;
   font-size: 1.35rem;
+  color: var(--ace-text);
 }
 
 .ace-group-hub__desc {
   margin: 4px 0 0;
   font-size: 0.82rem;
-  color: var(--ace-text-light);
+  color: var(--ace-text-muted);
 }
 
 .ace-group-hub__joined {
@@ -837,12 +862,13 @@
 
 .ace-group-hub__joined-name {
   font-size: 1.1rem;
+  color: var(--ace-text);
 }
 
 .ace-group-hub__joined-meta {
   margin: 4px 0 0;
   font-size: 0.82rem;
-  color: var(--ace-text-light);
+  color: var(--ace-text-muted);
 }
 
 .ace-group-hub__join {
@@ -890,6 +916,7 @@
 .ace-group-online__empty {
   margin: 0;
   font-size: 0.85rem;
+  color: var(--ace-text-muted);
 }
 
 .ace-group-online__grid {
@@ -905,21 +932,21 @@
   gap: 6px;
   padding: 12px 8px;
   border-radius: 12px;
-  background: #fff;
+  background: var(--ace-card);
   border: 1px solid var(--ace-border);
   text-decoration: none;
-  color: inherit;
+  color: var(--ace-text);
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .ace-group-member:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--ace-shadow);
 }
 
 .ace-group-member--online {
   border-color: rgba(34, 197, 94, 0.4);
-  background: rgba(226, 247, 237, 0.5);
+  background: color-mix(in srgb, #22c55e 12%, var(--ace-card));
 }
 
 .ace-group-member__avatar-wrap {
@@ -945,7 +972,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  border: 2px solid #fff;
+  border: 2px solid var(--ace-card);
 }
 
 .ace-group-member__name {
@@ -984,7 +1011,8 @@
   padding: 6px 14px;
   border-radius: 999px;
   border: 1px solid var(--ace-border);
-  background: #fff;
+  background: var(--ace-surface-muted);
+  color: var(--ace-text-muted);
   font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
@@ -992,7 +1020,8 @@
 
 .ace-clan-tabs__btn--active {
   border-color: #c47a6b;
-  background: rgba(196, 122, 107, 0.1);
+  background: color-mix(in srgb, #c47a6b 16%, var(--ace-card));
+  color: var(--ace-text);
 }
 
 .ace-clan-list--compact {
